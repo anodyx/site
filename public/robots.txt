@@ -1,0 +1,29 @@
+# Anodyx Robots.txt
+# https://anodyx.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Disallow admin and internal directories (if any in future)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /node_modules/
+
+# Allow all crawlers to access images and assets
+Allow: /images/
+Allow: /icons/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.webp$
+Allow: /*.svg$
+
+# Sitemap location
+Sitemap: https://anodyx.com/sitemap.xml
+
+# Crawl-delay (optional - removes crawl delay for faster indexing)
+# Crawl-delay: 1
