@@ -14,12 +14,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://anodyx.com'),
   title: "Anodyx - Launching Soon | Digital Transformation Solutions",
   description: "Anodyx is launching soon! We specialize in building stunning websites, custom software solutions, and helping businesses establish their online presence. Get in touch: anodyxofficial@gmail.com",
   keywords: ["Anodyx", "web development", "software solutions", "digital transformation", "online presence", "custom software"],
   authors: [{ name: "Anodyx Team" }],
   creator: "Anodyx",
   publisher: "Anodyx",
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '48x48', type: 'image/x-icon' },
+      { url: '/anodyx-logo.webp', sizes: '32x32', type: 'image/webp' }
+    ],
+    shortcut: '/favicon.ico',
+    apple: '/anodyx-logo.webp',
+  },
   openGraph: {
     title: "Anodyx - Launching Soon",
     description: "Digital transformation solutions coming soon. Building the future of online presence.",
@@ -64,6 +73,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <link rel="icon" href="/anodyx-logo.webp" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         {/* Google Tag Manager */}
         <Script
           id="gtm-script"
