@@ -19,7 +19,7 @@ export default function NotFound() {
         {/* Logo */}
         <div className="flex justify-center mb-8">
           <Image
-            src="/anodyx-logo.webp"
+            src="/android-chrome-192x192.png"
             alt="Anodyx Logo"
             width={80}
             height={80}

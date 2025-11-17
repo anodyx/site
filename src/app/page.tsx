@@ -89,7 +89,7 @@ export default function Home() {
           <nav className="flex justify-between items-center">
             <div ref={logoRef} className="flex items-center space-x-3">
               <Image
-                src="/anodyx-logo.webp"
+                src="/android-chrome-512x512.png"
                 alt="Anodyx"
                 width={50}
                 height={50}
@@ -100,7 +100,7 @@ export default function Home() {
                 Anodyx
               </span>
             </div>
-            <Badge variant="secondary" className="bg-anodyx-orange/20 text-anodyx-dark border-anodyx-orange/30">
+            <Badge variant="secondary" className="bg-anodyx-blue/80 text-anodyx-dark border-anodyx-blue/30">
               <Sparkles className="w-3 h-3 mr-1" />
               Coming Soon
             </Badge>
@@ -114,7 +114,7 @@ export default function Home() {
             <div className="flex justify-center mb-8">
               <div className="relative">
                 <Image
-                  src="/anodyx-logo.webp"
+                  src="/android-chrome-512x512.png"
                   alt="Anodyx Logo"
                   width={150}
                   height={150}
@@ -135,7 +135,7 @@ export default function Home() {
                 </span>
                 <br />
                 <span className="text-foreground">Something</span>{" "}
-                <span className="bg-gradient-to-r from-anodyx-orange to-anodyx-teal bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-anodyx-blue to-anodyx-teal bg-clip-text text-transparent">
                   Amazing
                 </span>
               </h1>
@@ -159,7 +159,7 @@ export default function Home() {
               </Card>
               
               <Card data-card className="p-6 border-anodyx-teal/20 bg-card/50 backdrop-blur-sm hover:shadow-lg transition-all duration-300 hover:border-anodyx-teal/40">
-                <div className="w-12 h-12 bg-gradient-to-br from-anodyx-teal to-anodyx-orange rounded-lg flex items-center justify-center mb-4 mx-auto">
+                <div className="w-12 h-12 bg-gradient-to-br from-anodyx-teal to-anodyx-blue rounded-lg flex items-center justify-center mb-4 mx-auto">
                   <Sparkles className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="font-semibold text-lg mb-2">Custom Solutions</h3>
@@ -167,7 +167,7 @@ export default function Home() {
               </Card>
               
               <Card data-card className="p-6 border-anodyx-orange/20 bg-card/50 backdrop-blur-sm hover:shadow-lg transition-all duration-300 hover:border-anodyx-orange/40">
-                <div className="w-12 h-12 bg-gradient-to-br from-anodyx-orange to-anodyx-blue rounded-lg flex items-center justify-center mb-4 mx-auto">
+                <div className="w-12 h-12 bg-gradient-to-br from-anodyx-teal to-anodyx-blue rounded-lg flex items-center justify-center mb-4 mx-auto">
                   <Mail className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="font-semibold text-lg mb-2">Expert Support</h3>
@@ -202,7 +202,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex items-center space-x-3">
               <Image
-                src="/anodyx-logo.webp"
+                src="/android-chrome-192x192.png"
                 alt="Anodyx"
                 width={32}
                 height={32}
