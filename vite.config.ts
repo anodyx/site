@@ -20,5 +20,20 @@ export default defineConfig(({ mode }) => ({
   },
   build: {
     outDir: "out",
+    // Performance optimizations for SEO
+    minify: "esbuild",
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // Split vendor code for better caching
+          vendor: ["react", "react-dom", "react-router-dom"],
+          ui: ["framer-motion", "@radix-ui/react-slot"],
+        },
+      },
+    },
+    // Enable CSS code splitting
+    cssCodeSplit: true,
+    // Generate source maps for production debugging (disable in production if needed)
+    sourcemap: mode === "development",
   },
 }));

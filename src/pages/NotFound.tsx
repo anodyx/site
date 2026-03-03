@@ -1,5 +1,7 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import SEO from "@/components/SEO";
+import { PAGE_SEO } from "@/lib/seo";
 
 const NotFound = () => {
   const location = useLocation();
@@ -9,15 +11,24 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-muted">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">404</h1>
-        <p className="mb-4 text-xl text-muted-foreground">Oops! Page not found</p>
-        <a href="/" className="text-primary underline hover:text-primary/90">
-          Return to Home
-        </a>
+    <>
+      <SEO
+        title={PAGE_SEO.notFound.title}
+        description={PAGE_SEO.notFound.description}
+        keywords={PAGE_SEO.notFound.keywords}
+        path={location.pathname}
+        noindex={true}
+      />
+      <div className="flex min-h-screen items-center justify-center bg-muted">
+        <div className="text-center">
+          <h1 className="mb-4 text-4xl font-bold">404</h1>
+          <p className="mb-4 text-xl text-muted-foreground">Oops! Page not found</p>
+          <a href="/" className="text-primary underline hover:text-primary/90">
+            Return to Home
+          </a>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

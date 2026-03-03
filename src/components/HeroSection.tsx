@@ -46,7 +46,7 @@ const HeroSection = () => {
     <section ref={sectionRef} className="relative min-h-screen flex items-center overflow-hidden">
       {/* Parallax Background */}
       <motion.div className="absolute inset-0 will-change-transform" style={{ y: bgY }}>
-        <img src={heroBg} alt="" className="w-full h-[120%] object-cover" />
+        <img src={heroBg} alt="Anodyx digital transformation background" className="w-full h-[120%] object-cover" />
         <div className="absolute inset-0 bg-hero opacity-80" />
       </motion.div>
 
